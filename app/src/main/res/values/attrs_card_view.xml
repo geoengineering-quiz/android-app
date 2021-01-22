@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="CardView">
+        <attr name="title" format="string" />
+        <attr name="body" format="string" />
+    </declare-styleable>
+</resources>

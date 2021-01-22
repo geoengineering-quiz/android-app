@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">Geoengineering Quiz</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="teste_dein_wissen">Teste dein Wissen!</string>
+    <string name="background_image">Hintergrundbild</string>
+    <string name="frage">Frage %d</string>
+    <string name="erkl_rung">Erklärung</string>
+    <string name="mehr">Mehr</string>
+    <string name="weiter">Weiter</string>
+    <string name="gratulation">Gratulation!</string>
+    <string name="teilen">Teilen</string>
+    <string name="hauptmen">Hauptmenü</string>
+    <string name="richtig">Richtig</string>
+    <string name="exzellent">Exzellent!</string>
+    <string name="versuchs_nochmal">Versuch\'s nochmal!</string>
+    <string name="final_score">%d/%d</string>
+    <string name="start">Start</string>
+    <string name="ergebnis">Ergebnis</string>
 </resources>

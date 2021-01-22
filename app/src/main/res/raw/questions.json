@@ -1,0 +1,105 @@
+{
+  "questions": [
+    {
+      "q": "Welches Ziel verfolgt Geo-Engineering?",
+      "o": [
+        "Die Weltbevölkerung reduzieren",
+        "Die globale Erwärmung reduzieren",
+        "Künstliche Landflächen erzeugen"
+      ],
+      "a": 1,
+      "i": "Unter dem Begriff Climate Engineering (CE) bzw. Geo-Engineering werden Maßnahmen zusammengefasst, die explizit dazu angewandt werden, die atmosphärische CO2-Konzentration zu senken oder die Strahlungsbilanz der Erde direkt zu beeinflussen, um so den anthropogenen Klimawandel abzuschwächen bzw. zu kompensieren."
+    },
+    {
+      "q": "In welchen Bereiche haben die Menschen bewusste Wetterbeeinflussung eingesetzt?",
+      "o": [
+        "Militär und Landwirtschaft",
+        "Feuerwehr (z. B. um Waldbrände zu löschen)",
+        "Ausbau von Seen in Wüsten"
+      ],
+      "a": 0,
+      "i": "Im  20.  Jahrhundert  wurden  Techniken  für  kontrollierten  Niederschlag  für  dessen landwirtschaftliche  Nutzung  entwickelt.  Mit  Hilfe  künstlicher  Kondensationskeime  aus Silberiodid, in Wolken ausgebracht, lässt sich Regen erzeugen. Eben  diese  Technik,  die  verspricht,  Wolken  regnen  zu  lassen,  wurde  auch  für  die militärische Nutzung interessant. Bekannt ist der Einsatz von Kondensationtechniken der USA im Vietnamkrieg. Darüber hinaus wurde diese Techniken eingesetzt, um Regenwolken von sportlichen oder politischen Großveranstaltungen fern zu halten, wie z.B. in Russland und China."
+    },
+    {
+      "q": "In welche zwei Kategorien lassen sich die Technologien von Geo-Engineering einteilen?",
+      "o": [
+        "Solar Radiation Management / Ozeanversauerung",
+        "Ozeanversauerung / Carbon Dioxide Removal",
+        "Solar Radiation Management / Carbon Dioxide Removal"
+      ],
+      "a": 2,
+      "i": "Prinzipiell gibt es zwei verschiedene Arten des Geoengineering. Das Carbon Dioxide Removal (CDR) soll eine Reduzierung der Kohlendioxidkonzentration der Atmosphäre erreichen. Das Solar Radiation Management (SRM) soll den Strahlungshaushalt der Erde beeinflussen, so dass die Sonneneinstrahlung die Erde weniger aufwärmt."
+    },
+    {
+      "q": "Um 2% der an der Erdoberfläche ankommenden Sonnenstrahlung zu reduzieren, ist ein Sonnenschild von wie vielen Reflektoren im Weltraum nötig?",
+      "o": [
+        "3 Millionen km²",
+        "5 Millionen km²",
+        "4 Millionen km²"
+      ],
+      "a": 0,
+      "i": "Mit Hilfe von Installationen im Weltraum soll die auf der Erde ankommende Sonnenstrahlung reduziert werden. Als Standorte werden erdnahe Umlaufbahnen, der Mond oder eine Position zwischen Erde und Sonne genannt. Das könnte  realisiert  entweder durch einen einzelnen Riesenspiegel, oder durch ein ultradünnen Geflecht aus Aluminiumfäden, oder durch Billionen reflektierenden Scheiben. Um 2% der Sonnenstrahlung zu reduzieren, ist ein Sonnenschild von ca. 3 Millionen Quadratkilometern nötig."
+    },
+    {
+      "q": "Eine ungleichmäßig verteilte Änderung der solaren Einstrahlung auf der Erde durch Reflektoren im Weltraum führen zu...",
+      "o": [
+        "Abkühlung in hohen Breiten",
+        "Erwärmung in den Tropen",
+        "Negativen Auswirkungen auf atmosphärische und ozeanische Zirkulation."
+      ],
+      "a": 2,
+      "i": "Die Installation von spiegelnden Objekten im Weltraum würde zu einer Änderung der solaren Einstrahlung an der Erdoberfläche führen, die jedoch nicht gleichmäßig auf der Erde verteilt wäre. Diese Maßnahmen können weitreichende Auswirkungen auf die Zirkulation und damit auf Temperaturen, Verdunstung, Bewölkung und Niederschläge in vielen Regionen der Erde haben. Daraus ergeben sich wiederum Konsequenzen für die Lebensbedingungen des Menschen, die Nahrungsmittelproduktion und die Stabilität von Ökosystemen."
+    },
+    {
+      "q": "Nach dem Vulkanusbruch des Pinatubo im Jahre 1991 sind die globale Mitteltemperatur in den folgenden zwei Jahren in Bodennähe...",
+      "o": [
+        "um 0,1-0,2 °C angestiegen",
+        "um 0,1-0,2 °C gesunken",
+        "um 1-2 °C angestiegen"
+      ],
+      "a": 1,
+      "i": "Die Eruption des Pinatubo von 1991, ist der zweitgrößte Vulkanausbruch des 20 Jahrhunderts. Neben der massiven Zerstörung und fast 900 Toten, haben die Wissenschaftler eine starke Auswirkung auf das globale Klima festgestellt. Nach dem Ausbruch wurde in den folgenden zwei Jahren ein Rückgang der globalen Mitteltemperatur in Bodennähe um 0,1 bis 0,2 °C beobachtet."
+    },
+    {
+      "q": "Eine zweite SRM-Methode liegt im Einbringen von reflektierenden Partikeln oder Teilchen in die...",
+      "o": [
+        "Troposphäre",
+        "Stratosphäre",
+        "Mesosphäre"
+      ],
+      "a": 1,
+      "i": "Die reflektierenden Partikeln oder Teilchen müssen in die Stratosphäre eingebracht werden. In der Stratosphäre sind die Austauschprozesse von Luftmassen erheblich geringer als in der Troposphäre. Deshalb verweilen Substanzen, die in die Stratosphäre gelangen, dort deutlich länger als in der Troposphäre und sind damit auch wirkungsvoller. Mit dieser Maßnahmen kann ein Teil des einfallenden Sonnenlichts in das Weltall reflektieren werden, und damit eine geringere Sonneneinstrahlung an der Erdoberfläche bewirken."
+    },
+    {
+      "q": "Welche Nebenwirkungen kann die Ausbringung von Schwefelverbindungen in der Stratosphäre haben?",
+      "o": [
+        "Reduktion des stratosphärischen Ozons",
+        "Steigender Meerspiegel",
+        "Ozeanversauerung"
+      ],
+      "a": 0,
+      "i": "Neben der Beeinflussung globaler Wetterphänomene sorgte der Ausbruch des Pinatubo auch für eine deutliche Reduktion des stratosphärischen Ozons um weltweit 2 % (Harris et al. 1997). Der mögliche Abbau stratosphärischen Ozons durch chemische Reaktionen an den Sulfattröpfchen ist ein weiterer, sehr kritischer Nebeneffekt der Methode."
+    },
+    {
+      "q": "Was ist die Albedo?",
+      "o": [
+        "Eine Chemikalie, die zur Reduzierung von CO2 eingesetzt wird.",
+        "Ein Maß für das Rückstrahlvermögen.",
+        "Feines Schwebstoffteilchen in der Luft, entweder fest oder flüssig.",
+        "Albedo beschreibt den prozentualen Anteil an diffus reflektierter Strahlung beim Auftreffen auf eine nicht selbst leuchtende und nicht spiegelnde Fläche. Also die Albedo ist ein Maß für das Rückstrahlvermögen."
+      ],
+      "a": 1,
+      "i": ""
+    },
+    {
+      "q": "Die Erhöhung der Albedo von Wolken ist ein weiterer Vorschlag zum Geo-Engineering im Rahmen der Beeinflussung des Strahlungshaushaltes der Erde. Dabei sollen...",
+      "o": [
+        "künstliche Wolken erzeugt werden",
+        "Wolken aufgelöst werden",
+        "Wolken abgeregnet werden"
+      ],
+      "a": 0,
+      "i": "Innerhalb der Maßnahme wird künstlich die Anzahl der Wolkenkondensationskerne erhöht. Diese Partikel dienen als zusätzliche Kondensationsoberfläche für den Wasserdampf und sollen damit weißere Wolken bilden bzw. bestehende Wolken ausweiten. Dies führt zu einer Erhöhung der Rückstreuung kurzwelliger Strahlung, d.h. der Albedo."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.GeoengineeringQuiz" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.GeoengineeringQuiz" parent="Theme.AppCompat.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/blue_500</item>
         <item name="colorPrimaryVariant">@color/blue_500</item>
@@ -10,7 +10,10 @@
         <item name="colorSecondaryVariant">@color/blue_500</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="colorOnBackground">@color/gray_500</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnBackground</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="19">true</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="19">true</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

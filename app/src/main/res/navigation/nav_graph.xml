@@ -9,5 +9,35 @@
         android:id="@+id/mainFragment"
         android:name="app.geoengineering.quiz.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="app.geoengineering.quiz.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/action_quizFragment_to_gameoverFragment"
+            app:destination="@id/gameoverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameoverFragment"
+        android:name="app.geoengineering.quiz.GameoverFragment"
+        android:label="fragment_gameover"
+        tools:layout="@layout/fragment_gameover">
+        <action
+            android:id="@+id/action_gameoverFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="score"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="total"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
 </navigation>
