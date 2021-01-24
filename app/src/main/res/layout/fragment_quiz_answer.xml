@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/fragment_quiz">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <app.geoengineering.quiz.AnswerButton
+        android:id="@+id/correctAnswer"
+        style="@style/AnswerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/middle_guideline_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_guideline_1"
+        tools:text="Reduzierung der Erderwärmung" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middle_guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/explanationCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswer">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider_horizontal"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <TextView
+
+                android:id="@+id/explanation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/erkl_rung"
+                android:textColor="@color/text_dark_secondary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/card_divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/gray_500"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/explanation_title" />
+
+            <TextView
+                android:id="@+id/explanation_body"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/roboto"
+                android:requiresFadingEdge="vertical"
+                android:scrollbarThumbVertical="@color/text_dark_secondary"
+                android:scrollbars="vertical"
+                android:textColor="@color/text_dark_primary"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_divider"
+                app:lineHeight="22sp"
+                tools:text="Der Sammelbegriff Geoengineering (auch Geo-Engineering oder Climate Engineering) bezeichnet vorsätzliche und großräumige Eingriffe mit technischen Mitteln in geochemische oder biogeochemische Kreisläufe der Erde." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/explanation_body">
+
+                <Button
+                    android:id="@+id/button_more_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/info_24px"
+                    android:drawableLeft="@drawable/info_24px"
+                    android:drawablePadding="4dp"
+                    android:fontFamily="@font/roboto"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/mehr"
+                    android:textAllCaps="false"
+                    android:textColor="@color/text_dark_primary"
+                    android:textSize="16sp"
+                    android:visibility="invisible"
+                    app:drawableTint="@color/text_dark_primary"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:drawableEnd="@drawable/chevron_right_24px"
+        android:drawableRight="@drawable/chevron_right_24px"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/roboto"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingEnd="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/weiter"
+        android:textAllCaps="false"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        app:drawableTint="@color/text_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

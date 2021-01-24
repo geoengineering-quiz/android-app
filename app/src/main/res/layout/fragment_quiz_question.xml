@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/fragment_quiz">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideline_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/questionCard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/middle_guideline_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_guideline_0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider_horizontal"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:showDividers="middle">
+
+            <TextView
+
+                android:id="@+id/question_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/text_dark_secondary"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Frage 1" />
+
+            <View
+                android:id="@+id/card_divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/gray_500"
+                app:layout_constraintTop_toBottomOf="@id/question_title"
+                tools:layout_editor_absoluteX="12dp" />
+
+            <TextView
+                android:id="@+id/question_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/text_dark_primary"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_divider"
+                tools:layout_editor_absoluteX="12dp"
+                tools:text="Was ist Geoengineering?" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middle_guideline_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <app.geoengineering.quiz.AnswerButton
+        android:id="@+id/button_answer1"
+        style="@style/AnswerButton"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_answer2"
+        app:layout_constraintEnd_toEndOf="@+id/questionCard"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/questionCard"
+        app:layout_constraintTop_toBottomOf="@+id/middle_guideline_0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Antwort 1" />
+
+    <app.geoengineering.quiz.AnswerButton
+        android:id="@+id/button_answer2"
+        style="@style/AnswerButton"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_answer3"
+        app:layout_constraintEnd_toEndOf="@+id/questionCard"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/questionCard"
+        app:layout_constraintTop_toBottomOf="@+id/button_answer1"
+        tools:text="Antwort 2" />
+
+    <app.geoengineering.quiz.AnswerButton
+        android:id="@+id/button_answer3"
+        style="@style/AnswerButton"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/questionCard"
+        app:layout_constraintStart_toStartOf="@+id/questionCard"
+        app:layout_constraintTop_toBottomOf="@+id/button_answer2"
+        tools:text="Antwort 3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

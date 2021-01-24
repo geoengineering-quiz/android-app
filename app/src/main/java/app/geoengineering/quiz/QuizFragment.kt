@@ -26,10 +26,12 @@ class QuizFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.apply {
+
+        binding.questionLayout.apply {
             answerButtons = arrayOf(buttonAnswer1, buttonAnswer2, buttonAnswer3)
-            explanationBody.movementMethod = ScrollingMovementMethod()
         }
+        binding.answerLayout.explanationBody.movementMethod = ScrollingMovementMethod()
+
         startQuiz()
     }
 
@@ -55,23 +57,26 @@ class QuizFragment : Fragment() {
 
     private fun nextQuestion(index: Int) {
         if (index + 1 == total) gameOver()
-        binding.buttonNext.setOnClickListener { nextQuestion(index + 1) }
+        binding.answerLayout.buttonNext.setOnClickListener { nextQuestion(index + 1) }
         renderQuestion(index)
     }
 
     private fun renderQuestion(index: Int) {
         val q = questions!![index]
 
-        binding.apply {
+        for ((i, b) in answerButtons!!.withIndex()) {
+            b.text = q.options[i]
+            b.isCorrect = false
+            b.isIncorrect = false
+            b.setOnClickListener { handleAnswer(it as AnswerButton, index, i) }
+        }
+
+        binding.questionLayout.apply {
             questionTitle.text = getString(R.string.frage, index + 1)
             questionBody.text = q.question
-            for ((i, b) in answerButtons!!.withIndex()) {
-                b.text = q.options[i]
-                b.isCorrect = false
-                b.isIncorrect = false
-                b.setOnClickListener { handleAnswer(it as AnswerButton, index, i) }
-            }
+        }
 
+        binding.answerLayout.apply {
             correctAnswer.text = q.options[q.answer]
             explanationBody.text = q.info
             explanationBody.scrollY = 0
