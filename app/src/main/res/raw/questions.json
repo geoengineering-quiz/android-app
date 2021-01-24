@@ -112,19 +112,19 @@
       "i": "Das Molekül CO₂ ist schwerer im Verhältnis zum Atom Kohlenstoff. Kohlendioxid hat eine molare Masse von 44 g/mol, Kohlenstoff nur 12g/mol. Somit ergibt sich ein Massenverhältns von 44:12 = 3,67. Das bedeutet, dass eine Tonne Kohlenstoff 3,67 Tonnen Kohlendioxid entspricht."
     },
     {
-      "q": "Carbon Capture and Storage (CSS) sind Verfahren bei denen das entstehende CO₂ [...] abgeschieden und in tief gelegene geologische Formationen gelagert wird.",
+      "q": "Carbon Capture and Storage (CCS) sind Verfahren bei denen das entstehende CO₂ [...] abgeschieden und in tief gelegene geologische Formationen gelagert wird.",
       "o": [
         "der direkten Umgebungsluft",
         "großen stationären Punktquellen (z. B. Kohlekraftwerke)",
         "den Ozeanen"
       ],
       "a": 1,
-      "i": "Bei CSS-Verfahren wird das aus großen stationären Punktquellen abgegebene CO₂ in tief gelegenen geologischen Formationen gelagerd. Dadurch wird verhindert dass das CO₂ in die Atmosphäre gelangt wo es die globale Erwärmung beschleunigen würde."
+      "i": "Bei CCS-Verfahren wird das aus großen stationären Punktquellen abgegebene CO₂ in tief gelegenen geologischen Formationen gelagerd. Dadurch wird verhindert dass das CO₂ in die Atmosphäre gelangt wo es die globale Erwärmung beschleunigen würde."
     },
     {
-      "q": "Welche Risiken birgt das unterirdische Speichern von CO₂ mittels Carbon Capture and Storage (CSS)?",
+      "q": "Welche Risiken birgt das unterirdische Speichern von CO₂ mittels Carbon Capture and Storage (CCS)?",
       "o": [
-        "CSS ist sicher und hat keine Risiken",
+        "CCS ist sicher und hat keine Risiken",
         "Schädigung von Organismen",
         "Versalzung bzw. Versauerung des Grundwassers"
       ],
@@ -139,7 +139,7 @@
         "Die DAC-Anlagen (künstliche Bäume) sind sehr klein"
       ],
       "a": 1,
-      "i": "Als Direct Air Capture werden Technologien zum Sammeln von CO₂ aus der Umgebungsluft bezeichnet. Das CO₂ wird im Untergrund oder in der Tiefsee gelagert, wodurch die CO₂-Konzentration in der Atmosphäre verringert werden soll. Das Verfahren ist zwar technisch umsetzbar, aber deutlich teurer als die CSS-Methode, da die CO₂-Konzentration in der Atmosphäre (0,04%) etwa 300-fach geringer ist als im Rauchgas eines Kraftwerks. CSS ist somit effizienter, da mehr CO₂ gesammelt werden kann."
+      "i": "Als Direct Air Capture werden Technologien zum Sammeln von CO₂ aus der Umgebungsluft bezeichnet. Das CO₂ wird im Untergrund oder in der Tiefsee gelagert, wodurch die CO₂-Konzentration in der Atmosphäre verringert werden soll. Das Verfahren ist zwar technisch umsetzbar, aber deutlich teurer als die CCS-Methode, da die CO₂-Konzentration in der Atmosphäre (0,04%) etwa 300-fach geringer ist als im Rauchgas eines Kraftwerks. CCS ist somit effizienter, da mehr CO₂ gesammelt werden kann."
     },
     {
       "q": "Die Atmosphäre enthält derzeit 800 Gt Kohlendioxid. Weitere Kohlenstoffreservoirs sind die Böden, die etwa 1.500 Gt Kohlenstoff speichern. Wie viel Kohlenstoff ist im Ozean gespeichert?",
