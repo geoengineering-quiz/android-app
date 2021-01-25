@@ -1,6 +1,8 @@
 package app.geoengineering.quiz
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
@@ -17,8 +19,10 @@ class QuizFragment : Fragment() {
     private var questions: Array<Question>? = null
     private var answerButtons: Array<AnswerButton>? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentQuizBinding.inflate(inflater, container, false)
         return binding.root
@@ -36,19 +40,6 @@ class QuizFragment : Fragment() {
     }
 
     private fun startQuiz() {
-        // 1. load questions from json file
-        // 2. initialize total
-        // 3. render question + options
-        // 4. button onClick: compare answers
-        // 5.   correct:
-        //          - set state to correct
-        //          - inc score
-        //      incorrect
-        //          - set state to incorrect
-        //      - render answer and description
-        // 6. if next question: repeat step 3
-        //    else: navigate to game over fragment and pass score / total
-
         val result = Klaxon().parse<Questions>(resources.openRawResource(R.raw.questions))
         questions = result!!.questions
         total = questions!!.size
@@ -99,7 +90,9 @@ class QuizFragment : Fragment() {
             score++
         } else button.isIncorrect = true
 
-        binding.viewAnimator.displayedChild = 1
+        Handler(Looper.getMainLooper()).postDelayed({
+            binding.viewAnimator.displayedChild = 1
+        }, 500)
     }
 
     private fun checkAnswer(question: Int, answer: Int) = questions!![question].answer == answer

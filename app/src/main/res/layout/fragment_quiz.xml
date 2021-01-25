@@ -16,6 +16,9 @@
 
     <ViewAnimator
         android:id="@+id/viewAnimator"
+        android:animateFirstView="false"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

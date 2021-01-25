@@ -1,5 +1,8 @@
 package app.geoengineering.quiz
 
+import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.Canvas
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -30,8 +33,10 @@ class GameoverFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentGameoverBinding.inflate(inflater, container, false)
         return binding.root
@@ -51,10 +56,27 @@ class GameoverFragment : Fragment() {
 
         val x = score / total * 100
         binding.feedbackText.text = when {
-            x >= 90 -> getString(R.string.exzellent)
-            x >= 60 -> getString(R.string.gratulation)
+            x >= 70 -> getString(R.string.exzellent)
+            x >= 50 -> getString(R.string.gratulation)
             else -> getString(R.string.versuchs_nochmal)
         }
+
+        binding.shareButton.setOnClickListener {
+            val bitmap = getBitmapFromView(binding.root)
+            val intent = Intent(Intent.ACTION_SEND).apply {
+                type = "image/png"
+                putExtra(Intent.EXTRA_STREAM, bitmap)
+            }
+            startActivity(Intent.createChooser(intent, "Share"))
+        }
+    }
+
+    private fun getBitmapFromView(view: View): Bitmap? {
+        val bitmap =
+            Bitmap.createBitmap(view.width, view.height, Bitmap.Config.ARGB_8888)
+        val canvas = Canvas(bitmap)
+        view.draw(canvas)
+        return bitmap
     }
 
     companion object {
@@ -68,11 +90,11 @@ class GameoverFragment : Fragment() {
          */
         @JvmStatic
         fun newInstance(score: Int, total: Int) =
-                GameoverFragment().apply {
-                    arguments = Bundle().apply {
-                        putInt(ARG_PARAM1, score)
-                        putInt(ARG_PARAM2, total)
-                    }
+            GameoverFragment().apply {
+                arguments = Bundle().apply {
+                    putInt(ARG_PARAM1, score)
+                    putInt(ARG_PARAM2, total)
                 }
+            }
     }
 }

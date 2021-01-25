@@ -1,14 +1,14 @@
 {
   "questions": [
     {
-      "q": "Welches Ziel verfolgt Geo-Engineering?",
+      "q": "Welches Ziel verfolgt Geoengineering?",
       "o": [
         "Die Weltbevölkerung reduzieren",
         "Die globale Erwärmung reduzieren",
         "Künstliche Landflächen erzeugen"
       ],
       "a": 1,
-      "i": "Unter dem Begriff Climate Engineering (CE) bzw. Geo-Engineering werden Maßnahmen zusammengefasst, die explizit dazu angewandt werden, die atmosphärische CO2-Konzentration zu senken oder die Strahlungsbilanz der Erde direkt zu beeinflussen, um so den anthropogenen Klimawandel abzuschwächen bzw. zu kompensieren."
+      "i": "Unter dem Begriff Climate Engineering (CE) bzw. Geoengineering werden Maßnahmen zusammengefasst, die explizit dazu angewandt werden, die atmosphärische CO2-Konzentration zu senken oder die Strahlungsbilanz der Erde direkt zu beeinflussen, um so den anthropogenen Klimawandel abzuschwächen bzw. zu kompensieren."
     },
     {
       "q": "In welchen Bereiche haben die Menschen bewusste Wetterbeeinflussung eingesetzt?",
@@ -21,7 +21,7 @@
       "i": "Im  20.  Jahrhundert  wurden  Techniken  für  kontrollierten  Niederschlag  für  dessen landwirtschaftliche  Nutzung  entwickelt.  Mit  Hilfe  künstlicher  Kondensationskeime  aus Silberiodid, in Wolken ausgebracht, lässt sich Regen erzeugen. Eben  diese  Technik,  die  verspricht,  Wolken  regnen  zu  lassen,  wurde  auch  für  die militärische Nutzung interessant. Bekannt ist der Einsatz von Kondensationtechniken der USA im Vietnamkrieg. Darüber hinaus wurde diese Techniken eingesetzt, um Regenwolken von sportlichen oder politischen Großveranstaltungen fern zu halten, wie z.B. in Russland und China."
     },
     {
-      "q": "In welche zwei Kategorien lassen sich die Technologien von Geo-Engineering einteilen?",
+      "q": "In welche zwei Kategorien lassen sich die Technologien von Geoengineering einteilen?",
       "o": [
         "Solar Radiation Management / Ozeanversauerung",
         "Ozeanversauerung / Carbon Dioxide Removal",
@@ -92,7 +92,7 @@
       "i": "Albedo beschreibt den prozentualen Anteil an diffus reflektierter Strahlung beim Auftreffen auf eine nicht selbst leuchtende und nicht spiegelnde Fläche."
     },
     {
-      "q": "Die Erhöhung der Albedo von Wolken ist ein weiterer Vorschlag zum Geo-Engineering im Rahmen der Beeinflussung des Strahlungshaushaltes der Erde. Dabei sollen...",
+      "q": "Die Erhöhung der Albedo von Wolken ist ein weiterer Vorschlag zum Geoengineering im Rahmen der Beeinflussung des Strahlungshaushaltes der Erde. Dabei sollen...",
       "o": [
         "Künstliche Wolken erzeugt werden",
         "Wolken aufgelöst werden",
