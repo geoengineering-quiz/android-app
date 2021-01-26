@@ -41,22 +41,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="16dp"
         app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_guideline_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/correctAnswer">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:divider="@drawable/divider_horizontal"
-            android:orientation="vertical"
-            android:showDividers="middle">
+            android:layout_height="match_parent">
 
             <TextView
 
@@ -110,6 +107,7 @@
                 tools:text="Der Sammelbegriff Geoengineering (auch Geo-Engineering oder Climate Engineering) bezeichnet vorsätzliche und großräumige Eingriffe mit technischen Mitteln in geochemische oder biogeochemische Kreisläufe der Erde." />
 
             <LinearLayout
+                style="?android:attr/buttonBarStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="end"
@@ -119,6 +117,7 @@
 
                 <Button
                     android:id="@+id/button_more_info"
+                    style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
@@ -131,10 +130,32 @@
                     android:text="@string/mehr"
                     android:textAllCaps="false"
                     android:textColor="@color/text_dark_primary"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:visibility="invisible"
                     app:drawableTint="@color/text_dark_primary"
                     tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/button_next"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:drawableEnd="@drawable/chevron_right_24px"
+                    android:drawableRight="@drawable/chevron_right_24px"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="4dp"
+                    android:paddingStart="16dp"
+                    android:fontFamily="@font/roboto"
+                    android:paddingEnd="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/weiter"
+                    android:paddingRight="16dp"
+                    android:textColor="@color/text_dark_primary"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    app:drawableTint="@color/text_dark_primary" />
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -147,30 +168,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.85" />
-
-    <Button
-        android:id="@+id/button_next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:drawableEnd="@drawable/chevron_right_24px"
-        android:drawableRight="@drawable/chevron_right_24px"
-        android:drawablePadding="4dp"
-        android:fontFamily="@font/roboto"
-        android:paddingStart="16dp"
-        android:paddingLeft="16dp"
-        android:paddingEnd="8dp"
-        android:paddingRight="8dp"
-        android:text="@string/weiter"
-        android:textAllCaps="false"
-        android:textColor="@color/text_primary"
-        android:textSize="16sp"
-        app:drawableTint="@color/text_primary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

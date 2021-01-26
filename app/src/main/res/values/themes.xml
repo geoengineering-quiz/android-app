@@ -11,9 +11,12 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="colorOnBackground">@color/gray_500</item>
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorOnBackground</item>
+        <item name="android:statusBarColor" tools:targetApi="l">#000</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">#fff</item>
         <item name="android:windowTranslucentStatus" tools:targetApi="19">true</item>
         <item name="android:windowTranslucentNavigation" tools:targetApi="19">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>
