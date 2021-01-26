@@ -54,10 +54,10 @@ class GameoverFragment : Fragment() {
         binding.progressBar.max = total
         binding.resultScore.text = getString(R.string.final_score, score, total)
 
-        val x = score / total * 100
+        val x = score * 100 / total
         binding.feedbackText.text = when {
-            x >= 70 -> getString(R.string.exzellent)
-            x >= 50 -> getString(R.string.gratulation)
+            x >= 80 -> getString(R.string.exzellent)
+            x >= 60 -> getString(R.string.gratulation)
             else -> getString(R.string.versuchs_nochmal)
         }
 
