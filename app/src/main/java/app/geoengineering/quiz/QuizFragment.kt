@@ -47,9 +47,8 @@ class QuizFragment : Fragment() {
     }
 
     private fun nextQuestion(index: Int) {
-        if (index + 1 == total) gameOver()
-        binding.answerLayout.buttonNext.setOnClickListener { nextQuestion(index + 1) }
-        renderQuestion(index)
+        if (index == total) gameOver()
+        else renderQuestion(index)
     }
 
     private fun renderQuestion(index: Int) {
@@ -81,6 +80,8 @@ class QuizFragment : Fragment() {
     }
 
     private fun handleAnswer(button: AnswerButton, question: Int, answer: Int) {
+        binding.answerLayout.buttonNext.setOnClickListener { nextQuestion(question + 1) }
+
         for (b in answerButtons!!) {
             b.setOnClickListener { }
         }

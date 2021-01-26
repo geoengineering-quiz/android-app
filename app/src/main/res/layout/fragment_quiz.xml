@@ -5,29 +5,35 @@
     android:layout_height="match_parent"
     tools:context=".QuizFragment">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/background_image"
-        android:scaleType="centerCrop"
-        android:scrollX="50dp"
-        android:src="@drawable/background_image"
-        android:tint="#1A000000" />
+<androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/background_image"
+    android:scaleType="centerCrop"
+    android:scrollX="50dp"
+    android:src="@drawable/background_image"
+    android:tint="#1A000000" />
 
-    <ViewAnimator
-        android:id="@+id/viewAnimator"
-        android:animateFirstView="false"
-        android:inAnimation="@android:anim/fade_in"
-        android:outAnimation="@android:anim/fade_out"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include
-            android:id="@+id/question_layout"
-            layout="@layout/fragment_quiz_question" />
+        <ViewAnimator
+            android:id="@+id/viewAnimator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateFirstView="false"
+            android:inAnimation="@android:anim/fade_in"
+            android:outAnimation="@android:anim/fade_out">
 
-        <include
-            android:id="@+id/answer_layout"
-            layout="@layout/fragment_quiz_answer" />
-    </ViewAnimator>
+            <include
+                android:id="@+id/question_layout"
+                layout="@layout/fragment_quiz_question" />
+
+            <include
+                android:id="@+id/answer_layout"
+                layout="@layout/fragment_quiz_answer" />
+        </ViewAnimator>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
